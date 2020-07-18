@@ -24,6 +24,7 @@ class LogStash::Outputs::AzureLogAnalytics < LogStash::Outputs::Base
   # Table name under custom logs in which the data will be inserted
   config :custom_log_table_name, :validate => :string, :required => true
 
+
   # The service endpoint (Default: ods.opinsights.azure.com)
   config :endpoint, :validate => :string, :default => 'ods.opinsights.azure.com'
 
